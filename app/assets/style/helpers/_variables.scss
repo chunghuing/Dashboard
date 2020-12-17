@@ -15,7 +15,7 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black:    #121212; //#000 !default
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -66,14 +66,15 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$primary:         #2A8356; // $blue !default;
+$primary-lighter: #CDDDCD;
+$secondary:       #EDF4EE; // $gray-600 !default;
+$success:         $green !default;
+$info:            $cyan !default;
+$warning:         #E3006E; // $yellow !default;
+$danger:          $red !default;
+$light:           #0000009A; // $gray-100 !default;
+$dark:            $gray-800 !default;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -140,11 +141,13 @@ $spacers: () !default;
 $spacers: map-merge(
   (
     0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    1: ($spacer * .25), // 4
+    2: ($spacer * .5),  // 8
+    3: $spacer,         // 16
+    4: ($spacer * 1.5), // 24
+    5: ($spacer * 2),   // 32
+    6: ($spacer * 2.5), // 44
+    7: ($spacer * 3)    // 48
   ),
   $spacers
 );
@@ -278,14 +281,15 @@ $embed-responsive-aspect-ratios: join(
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      'Lato', sans-serif, 'Roboto Mono', monospace, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                $font-size-base * 1.25 !default;
-$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.25 !default; // 20px
+$font-size-sm:                $font-size-base * .875 !default; // 14px
+$font-size-xs:                $font-size-base * .75 !default;  // 12px
 
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
@@ -296,12 +300,12 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 2.5 !default;  // 40px
+$h2-font-size:                $font-size-base * 2 !default;    // 32px
+$h3-font-size:                $font-size-base * 1.75 !default; // 28px
+$h4-font-size:                $font-size-base * 1.5 !default;  // 24px
+$h5-font-size:                $font-size-base * 1.25 !default; // 20px
+$h6-font-size:                $font-size-base !default;        // 16px  
 
 $headings-margin-bottom:      $spacer / 2 !default;
 $headings-font-family:        null !default;
@@ -829,10 +833,10 @@ $jumbotron-bg:                      $gray-200 !default;
 // Cards
 
 $card-spacer-y:                     .75rem !default;
-$card-spacer-x:                     1.25rem !default;
+$card-spacer-x:                     1rem; // 1.25rem !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
-$card-border-color:                 rgba($black, .125) !default;
+$card-border-color:                 $primary-lighter; // rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-bg:                       rgba($black, .03) !default;
 $card-cap-color:                    null !default;
@@ -1013,7 +1017,7 @@ $progress-bar-transition:           width .6s ease !default;
 
 $list-group-color:                  null !default;
 $list-group-bg:                     $white !default;
-$list-group-border-color:           rgba($black, .125) !default;
+$list-group-border-color:           $primary-lighter; // rgba($black, .125) !default;
 $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
 
@@ -1021,9 +1025,9 @@ $list-group-item-padding-y:         .75rem !default;
 $list-group-item-padding-x:         1.25rem !default;
 
 $list-group-hover-bg:               $gray-100 !default;
-$list-group-active-color:           $component-active-color !default;
-$list-group-active-bg:              $component-active-bg !default;
-$list-group-active-border-color:    $list-group-active-bg !default;
+$list-group-active-color:           $black; // $component-active-color !default;
+$list-group-active-bg:              $secondary; // $component-active-bg !default;
+$list-group-active-border-color:    $primary-lighter; // $list-group-active-bg !default;
 
 $list-group-disabled-color:         $gray-600 !default;
 $list-group-disabled-bg:            $list-group-bg !default;
