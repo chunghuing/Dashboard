@@ -11498,7 +11498,6 @@ code {
 }
 
 .sidebar {
-  min-width: 296px;
   min-height: 100vh;
 }
 
@@ -11525,6 +11524,57 @@ code {
   width: 40px;
   height: 40px;
   overflow: hidden;
+}
+
+.table {
+  margin-bottom: 63px;
+}
+
+.table thead th {
+  border-bottom: 1px solid #121212;
+}
+
+.table th {
+  border-top: none;
+}
+
+.table td {
+  border-top: 1px solid #EDF4EE;
+  padding: 16px 0 0 0;
+}
+
+.table tr:last-child td {
+  border-bottom: 1px solid #EDF4EE;
+}
+
+.table .material-icons:hover {
+  color: #2A8356;
+}
+
+.table-hover tbody tr:hover {
+  color: #121212;
+  background-color: #EDF4EE;
+}
+
+.modal-body .close {
+  padding: 1rem 1rem;
+  margin: -1rem -1rem -1rem auto;
+}
+
+.admin-img {
+  background: url("./../images/emir.jpeg") center center/cover;
+  width: 141px;
+  height: 141px;
+}
+
+.btn.close.collapsed span {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.custom-input-height {
+  height: 51px;
 }
 
 /*# sourceMappingURL=all.css.map */
