@@ -383,22 +383,531 @@
                 </a>
               </div>
             </div>
-
           </div>
 
           <!-- list-2 -->
           <div class="tab-pane fade show " id="list-2" role="tabpanel" aria-labelledby="list-group-2">
-            list-group-2...
+            <div class="card">
+              <!-- card-header -->
+              <div class="card-header bg-secondary pr-0">
+                <div class="d-flex">
+                  <div class="flex-grow-1">
+                    <p class="font-size-xs mb-1">Chapter Assignment 1</p>
+                    <p class="font-weight-bold">My Homework</p>
+                  </div>
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-secondary line-height-1 px-3" type="button" id="dropdownMenu"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="material-icons">more_vert</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                      <a class="dropdown-item" href="#">edit</a>
+                      <a class="dropdown-item" href="#">delete</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card-body -->
+              <div class="card-body">
+                <div class="media mb-3">
+                  <!-- media-img -->
+                  <div class="rounded-circle mr-2 media-img">
+                    <img src="./assets/images/emilywang.jpeg" class="img-fluid" alt="user-img">
+                  </div>
+                  <!-- media-body -->
+                  <div class="media-body border-bottom pb-3">
+                    <p class="font-weight-bold mb-1">David Xu</p>
+                    <p class="text-light font-size-xs">10:38 AM (12 hrs ago)</p>
+                    <p class="my-3 pr-3 font-size-sm">Hi Teacher, the attached file is my homework of chapter 2. And
+                      here comes a question: Why in the following code the height of the
+                      <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap below the
+                      image, but it doesn’t seems to be a padding/margin.
+                      <br>What is the gap or extra space below image?
+                    </p>
+                    <!-- file download -->
+                    <a href="#" class="btn btn-secondary border d-inline-flex align-items-center">
+                      <span class="material-icons mr-2">attach_file</span>
+                      <span class="font-weight-bold">HW-2-David.zip</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="media">
+                  <!-- media-img -->
+                  <div class="rounded-circle mr-2 media-img">
+                    <img src="./assets/images/andychen.jpeg" class="img-fluid" alt="user-img">
+                  </div>
+                  <!-- media-body -->
+                  <div class="media-body">
+                    <p class="font-weight-bold mb-1">Andy Chen (You)</p>
+                    <p class="text-light font-size-xs">13:24 AM (1 hours ago)</p>
+                    <p class="my-3 pr-3 font-size-sm">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that
+                      a, b, c and d sit on. There is space below that line for the descenders you find on letters like
+                      g, j, p and q.
+                      <br><br>You can: 　
+                    <ul>
+                      <li>adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the
+                        <code>middle</code> ) or
+                      </li>
+                      <li>change the <code>display</code> so it isn’t inline.</li>
+                    </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- reply 視窗 start -->
+            <div class="collapse position-absolute col" id="collapseExample" style="bottom: 0;right: 0;">
+              <div class="card">
+                <!-- card-header -->
+                <div class="card-header bg-secondary">
+                  <ul class="d-flex list-unstyled align-items-center mb-0">
+                    <li class="mr-4">
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle font-weight-bold" type="button"
+                          id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Body Text
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item h1" href="#">Heading 1</a>
+                          <a class="dropdown-item h2" href="#">Heading 2</a>
+                          <a class="dropdown-item h3" href="#">Heading 3</a>
+                          <a class="dropdown-item h4" href="#">Heading 4</a>
+                          <a class="dropdown-item h5" href="#">Heading 5</a>
+                          <a class="dropdown-item h6" href="#">Heading 6</a>
+                          <a class="dropdown-item" href="#">Body Text</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">format_bold</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">format_italic</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">format_list_bulleted</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">format_list_numbered</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">insert_photo</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">insert_link</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">code</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <textarea cols="30" rows="6" class="border-0 py-3 px-4" placeholder="Reply an answer…"></textarea>
+
+                <!-- card-footer -->
+                <div class="card-footer border-top-0 bg-white text-right">
+                  <a href="#collapseExample" class="btn px-4 py-2 btn-outline-primary" data-toggle="collapse"
+                    role="button" aria-expanded="false" aria-controls="collapse">
+                    Cancel
+                  </a>
+
+                  <a href="#collapseExample" class="btn px-4 py-2 btn-primary ml-2" data-toggle="collapse" role="button"
+                    aria-expanded="false" aria-controls="collapse">
+                    Reply
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- reply 視窗 end -->
+            <div class="d-flex justify-content-between mt-3">
+              <!-- navigate -->
+              <div>
+                <a href="#" class="btn">
+                  <span class="material-icons">navigate_before</span>
+                </a>
+                <a href="#" class="btn">
+                  <span class="material-icons">navigate_next</span>
+                </a>
+              </div>
+
+              <!-- btn -->
+              <div>
+                <a href="#" class="btn btn-outline-primary px-5 py-2 font-weight-bold">
+                  Mark as read
+                </a>
+                <a class="btn btn-primary px-5 py-2 font-weight-bold ml-3" data-toggle="collapse"
+                  href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapse">
+                  Reply
+                </a>
+              </div>
+            </div>
           </div>
 
           <!-- list-3 -->
           <div class="tab-pane fade" id="list-3" role="tabpanel" aria-labelledby="list-group-3">
-            list-group-3...
+            <div class="card">
+              <!-- card-header -->
+              <div class="card-header bg-secondary pr-0">
+                <div class="d-flex">
+                  <div class="flex-grow-1">
+                    <p class="font-size-xs mb-1">Final Assignment</p>
+                    <p class="font-weight-bold">Have a problem with this…</p>
+                  </div>
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-secondary line-height-1 px-3" type="button" id="dropdownMenu"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="material-icons">more_vert</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                      <a class="dropdown-item" href="#">edit</a>
+                      <a class="dropdown-item" href="#">delete</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card-body -->
+              <div class="card-body">
+                <div class="media mb-3">
+                  <!-- media-img -->
+                  <div class="rounded-circle mr-2 media-img">
+                    <img src="./assets/images/emilywang.jpeg" class="img-fluid" alt="user-img">
+                  </div>
+                  <!-- media-body -->
+                  <div class="media-body border-bottom pb-3">
+                    <p class="font-weight-bold mb-1">Tony Wei</p>
+                    <p class="text-light font-size-xs">10:38 AM (18 hrs ago)</p>
+                    <p class="my-3 pr-3 font-size-sm">Hi Teacher, the attached file is my homework of chapter 2. And
+                      here comes a question: Why in the following code the height of the
+                      <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap below the
+                      image, but it doesn’t seems to be a padding/margin.
+                      <br>What is the gap or extra space below image?
+                    </p>
+                    <!-- file download -->
+                    <a href="#" class="btn btn-secondary border d-inline-flex align-items-center">
+                      <span class="material-icons mr-2">attach_file</span>
+                      <span class="font-weight-bold">HW-2-David.zip</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="media">
+                  <!-- media-img -->
+                  <div class="rounded-circle mr-2 media-img">
+                    <img src="./assets/images/andychen.jpeg" class="img-fluid" alt="user-img">
+                  </div>
+                  <!-- media-body -->
+                  <div class="media-body">
+                    <p class="font-weight-bold mb-1">Andy Chen (You)</p>
+                    <p class="text-light font-size-xs">13:24 AM (1 hours ago)</p>
+                    <p class="my-3 pr-3 font-size-sm">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that
+                      a, b, c and d sit on. There is space below that line for the descenders you find on letters like
+                      g, j, p and q.
+                      <br><br>You can: 　
+                    <ul>
+                      <li>adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the
+                        <code>middle</code> ) or
+                      </li>
+                      <li>change the <code>display</code> so it isn’t inline.</li>
+                    </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- reply 視窗 start -->
+            <div class="collapse position-absolute col" id="collapseExample" style="bottom: 0;right: 0;">
+              <div class="card">
+                <!-- card-header -->
+                <div class="card-header bg-secondary">
+                  <ul class="d-flex list-unstyled align-items-center mb-0">
+                    <li class="mr-4">
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle font-weight-bold" type="button"
+                          id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Body Text
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item h1" href="#">Heading 1</a>
+                          <a class="dropdown-item h2" href="#">Heading 2</a>
+                          <a class="dropdown-item h3" href="#">Heading 3</a>
+                          <a class="dropdown-item h4" href="#">Heading 4</a>
+                          <a class="dropdown-item h5" href="#">Heading 5</a>
+                          <a class="dropdown-item h6" href="#">Heading 6</a>
+                          <a class="dropdown-item" href="#">Body Text</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">format_bold</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">format_italic</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">format_list_bulleted</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">format_list_numbered</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">insert_photo</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">insert_link</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">code</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <textarea cols="30" rows="6" class="border-0 py-3 px-4" placeholder="Reply an answer…"></textarea>
+
+                <!-- card-footer -->
+                <div class="card-footer border-top-0 bg-white text-right">
+                  <a href="#collapseExample" class="btn px-4 py-2 btn-outline-primary" data-toggle="collapse"
+                    role="button" aria-expanded="false" aria-controls="collapse">
+                    Cancel
+                  </a>
+
+                  <a href="#collapseExample" class="btn px-4 py-2 btn-primary ml-2" data-toggle="collapse" role="button"
+                    aria-expanded="false" aria-controls="collapse">
+                    Reply
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- reply 視窗 end -->
+            <div class="d-flex justify-content-between mt-3">
+              <!-- navigate -->
+              <div>
+                <a href="#" class="btn">
+                  <span class="material-icons">navigate_before</span>
+                </a>
+                <a href="#" class="btn">
+                  <span class="material-icons">navigate_next</span>
+                </a>
+              </div>
+
+              <!-- btn -->
+              <div>
+                <a href="#" class="btn btn-outline-primary px-5 py-2 font-weight-bold">
+                  Mark as read
+                </a>
+                <a class="btn btn-primary px-5 py-2 font-weight-bold ml-3" data-toggle="collapse"
+                  href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapse">
+                  Reply
+                </a>
+              </div>
+            </div>
           </div>
 
           <!-- list-4 -->
           <div class="tab-pane fade" id="list-4" role="tabpanel" aria-labelledby="list-group-4">
-            list-group-4...
+            <div class="card">
+              <!-- card-header -->
+              <div class="card-header bg-secondary pr-0">
+                <div class="d-flex">
+                  <div class="flex-grow-1">
+                    <p class="font-size-xs mb-1">Final Assignment</p>
+                    <p class="font-weight-bold">Did I do it right?</p>
+                  </div>
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-secondary line-height-1 px-3" type="button" id="dropdownMenu"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="material-icons">more_vert</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu">
+                      <a class="dropdown-item" href="#">edit</a>
+                      <a class="dropdown-item" href="#">delete</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- card-body -->
+              <div class="card-body">
+                <div class="media mb-3">
+                  <!-- media-img -->
+                  <div class="rounded-circle mr-2 media-img">
+                    <img src="./assets/images/emilywang.jpeg" class="img-fluid" alt="user-img">
+                  </div>
+                  <!-- media-body -->
+                  <div class="media-body border-bottom pb-3">
+                    <p class="font-weight-bold mb-1">Christina Lin</p>
+                    <p class="text-light font-size-xs">10:38 AM (19 hrs ago)</p>
+                    <p class="my-3 pr-3 font-size-sm">Hi Teacher, the attached file is my homework of chapter 2. And
+                      here comes a question: Why in the following code the height of the
+                      <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap below the
+                      image, but it doesn’t seems to be a padding/margin.
+                      <br>What is the gap or extra space below image?
+                    </p>
+                    <!-- file download -->
+                    <a href="#" class="btn btn-secondary border d-inline-flex align-items-center">
+                      <span class="material-icons mr-2">attach_file</span>
+                      <span class="font-weight-bold">HW-2-David.zip</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="media">
+                  <!-- media-img -->
+                  <div class="rounded-circle mr-2 media-img">
+                    <img src="./assets/images/andychen.jpeg" class="img-fluid" alt="user-img">
+                  </div>
+                  <!-- media-body -->
+                  <div class="media-body">
+                    <p class="font-weight-bold mb-1">Andy Chen (You)</p>
+                    <p class="text-light font-size-xs">13:24 AM (1 hours ago)</p>
+                    <p class="my-3 pr-3 font-size-sm">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that
+                      a, b, c and d sit on. There is space below that line for the descenders you find on letters like
+                      g, j, p and q.
+                      <br><br>You can: 　
+                    <ul>
+                      <li>adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the
+                        <code>middle</code> ) or
+                      </li>
+                      <li>change the <code>display</code> so it isn’t inline.</li>
+                    </ul>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- reply 視窗 start -->
+            <div class="collapse position-absolute col" id="collapseExample" style="bottom: 0;right: 0;">
+              <div class="card">
+                <!-- card-header -->
+                <div class="card-header bg-secondary">
+                  <ul class="d-flex list-unstyled align-items-center mb-0">
+                    <li class="mr-4">
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle font-weight-bold" type="button"
+                          id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Body Text
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item h1" href="#">Heading 1</a>
+                          <a class="dropdown-item h2" href="#">Heading 2</a>
+                          <a class="dropdown-item h3" href="#">Heading 3</a>
+                          <a class="dropdown-item h4" href="#">Heading 4</a>
+                          <a class="dropdown-item h5" href="#">Heading 5</a>
+                          <a class="dropdown-item h6" href="#">Heading 6</a>
+                          <a class="dropdown-item" href="#">Body Text</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">format_bold</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">format_italic</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">format_list_bulleted</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">format_list_numbered</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">insert_photo</span>
+                      </a>
+                    </li>
+                    <li class="mr-4">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">insert_link</span>
+                      </a>
+                    </li>
+                    <li class="">
+                      <a href="#" class="line-height-1">
+                        <span class="material-icons">code</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <textarea cols="30" rows="6" class="border-0 py-3 px-4" placeholder="Reply an answer…"></textarea>
+
+                <!-- card-footer -->
+                <div class="card-footer border-top-0 bg-white text-right">
+                  <a href="#collapseExample" class="btn px-4 py-2 btn-outline-primary" data-toggle="collapse"
+                    role="button" aria-expanded="false" aria-controls="collapse">
+                    Cancel
+                  </a>
+
+                  <a href="#collapseExample" class="btn px-4 py-2 btn-primary ml-2" data-toggle="collapse" role="button"
+                    aria-expanded="false" aria-controls="collapse">
+                    Reply
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- reply 視窗 end -->
+            <div class="d-flex justify-content-between mt-3">
+              <!-- navigate -->
+              <div>
+                <a href="#" class="btn">
+                  <span class="material-icons">navigate_before</span>
+                </a>
+                <a href="#" class="btn">
+                  <span class="material-icons">navigate_next</span>
+                </a>
+              </div>
+
+              <!-- btn -->
+              <div>
+                <a href="#" class="btn btn-outline-primary px-5 py-2 font-weight-bold">
+                  Mark as read
+                </a>
+                <a class="btn btn-primary px-5 py-2 font-weight-bold ml-3" data-toggle="collapse"
+                  href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapse">
+                  Reply
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
